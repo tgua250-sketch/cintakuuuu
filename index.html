@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>birthday surprise for irine ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&display=swap');
+:root{--wine:#3a172a;--wine2:#512038;--cream:#fff7f5;--pink:#e9a0b9;--gold:#f4cf88;--muted:#dcb8c8}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:#321323;color:#fff7f5;font-family:"DM Sans",sans-serif;overflow-x:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-3;background:
+radial-gradient(circle at 20% 10%,rgba(183,94,130,.25),transparent 32%),
+radial-gradient(circle at 80% 80%,rgba(239,180,139,.14),transparent 35%),
+linear-gradient(145deg,#2b101f,#461b31 50%,#2d1222)}
+body:after{content:"";position:fixed;inset:0;z-index:-2;opacity:.18;background-image:radial-gradient(#fff 1px,transparent 1.5px);background-size:34px 34px;pointer-events:none}
+.screen{min-height:100svh;display:none;position:relative;padding:70px 22px 80px;align-items:center;justify-content:center}
+.screen.active{display:flex;animation:fade .8s ease}
+@keyframes fade{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+.wrap{width:min(720px,100%);text-align:center}
+.eyebrow{font-size:13px;letter-spacing:5px;text-transform:uppercase;color:var(--muted);margin-bottom:22px}
+h1,h2,.serif{font-family:"Cormorant Garamond",Georgia,serif}
+h1{font-size:clamp(46px,12vw,82px);font-weight:500;line-height:.92;margin:0 0 22px}
+h2{font-size:clamp(38px,10vw,62px);font-weight:500;margin:0 0 16px}
+.gold{color:var(--gold);font-style:italic}
+.sub{font-family:"Cormorant Garamond",Georgia,serif;font-size:22px;color:#ead3dc;line-height:1.6}
+.btn{background:transparent;border:1px solid rgba(255,247,245,.8);color:#fff;padding:15px 26px;min-width:180px;font-size:15px;letter-spacing:.3px;cursor:pointer;transition:.25s}
+.btn:hover{background:#fff;color:#3a172a;transform:translateY(-2px)}
+.btn.round{border-radius:999px;border-color:rgba(244,207,136,.7);color:#f7dca3}
+.btn.primary{background:#e79bb5;border-color:#e79bb5;color:#351426}
+.choices{display:grid;gap:12px;width:min(390px,100%);margin:28px auto}
+.choice{padding:15px 20px;border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.06);color:white;border-radius:10px;font-size:16px;cursor:pointer}
+.choice:hover{background:rgba(255,255,255,.12)}
+#quizMsg{min-height:28px;color:#f4cf88;margin-top:12px}
+.progress{height:2px;background:rgba(255,255,255,.12);width:150px;margin:22px auto}
+.progress i{display:block;height:100%;width:0;background:#f4cf88;transition:.5s}
+.float{position:fixed;z-index:0;pointer-events:none;opacity:.8;font-size:23px;animation:drift 10s linear infinite}
+@keyframes drift{0%{transform:translateY(105vh) rotate(0);opacity:0}15%{opacity:.8}100%{transform:translateY(-15vh) rotate(180deg);opacity:0}}
+.bouquet{height:430px;position:relative;margin:25px auto}
+.stem{position:absolute;bottom:20px;left:50%;height:210px;width:4px;background:#79966d;transform-origin:bottom}
+.stem.s1{transform:rotate(-24deg)}.stem.s2{transform:rotate(24deg)}.stem.s3{transform:rotate(-8deg)}.stem.s4{transform:rotate(9deg)}
+.flower{position:absolute;cursor:pointer;font-size:58px;filter:drop-shadow(0 7px 12px rgba(0,0,0,.25));transition:.25s}
+.flower:hover{transform:scale(1.12) rotate(4deg)}
+.f1{left:18%;bottom:205px}.f2{left:38%;bottom:275px}.f3{right:20%;bottom:205px}.f4{right:38%;bottom:285px}.f5{left:46%;bottom:125px;font-size:68px}
+.vase{position:absolute;bottom:0;left:50%;transform:translateX(-50%);width:145px;height:90px;background:linear-gradient(#dd8eae,#a94e79);border-radius:10px 10px 45% 45%;box-shadow:0 15px 35px #170b12}
+.message{min-height:40px;color:#f7dca3;font-family:"Cormorant Garamond",serif;font-size:22px;font-style:italic}
+.letter{background:#fff7f5;color:#3c2830;border-radius:2px;padding:42px 30px;text-align:left;box-shadow:0 20px 55px rgba(0,0,0,.3);position:relative}
+.letter:before{content:"✿  ✦  ✿";display:block;text-align:center;color:#d78da8;font-size:22px;margin-bottom:22px}
+.letter .date{text-align:center;color:#b4778e;font-family:"Cormorant Garamond";font-style:italic;font-size:22px;margin-bottom:28px}
+.letter p{font-family:"Cormorant Garamond",Georgia,serif;font-size:21px;line-height:1.65;margin:0 0 18px}
+.letter .sign{text-align:right;font-style:italic}
+.photos{display:grid;gap:55px;margin-top:30px}
+.polaroid{background:#fff;color:#3b2630;padding:13px 13px 25px;box-shadow:0 20px 45px rgba(0,0,0,.35);width:min(520px,100%);margin:auto}
+.polaroid:nth-child(1){transform:rotate(-2deg)}.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid img{display:block;width:100%;height:auto;max-height:650px;object-fit:cover}
+.music-grid{display:grid;gap:15px;margin-top:28px}
+.song{display:flex;align-items:center;justify-content:space-between;gap:15px;padding:18px 20px;border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06);text-align:left}
+.song small{color:#cdaebb}.song strong{display:block;font-family:"Cormorant Garamond";font-size:23px;font-weight:500}
+.play{border:1px solid #e7b3c6;background:transparent;color:#fff;border-radius:50%;width:46px;height:46px;cursor:pointer;flex-shrink:0}.play.playing{background:#e7b3c6;color:#351426}.music-status{min-height:24px;color:#f4cf88;font-size:14px;margin-top:18px}.song small{display:block}
+.reason-list{display:grid;gap:10px;margin-top:25px}
+.reason{padding:17px;border-bottom:1px solid rgba(255,255,255,.12);font-family:"Cormorant Garamond";font-size:23px;color:#f1d9e1}
+.reason span{color:#f4cf88;margin-right:8px}
+.flower-ending{font-size:34px;letter-spacing:8px;margin:25px}
+.heart{position:fixed;bottom:20px;left:50%;font-size:45px;color:#f5b1c9;animation:pulse 1.4s infinite}
+@keyframes pulse{50%{transform:scale(1.15)}}
+.music-note{position:fixed;right:18px;bottom:18px;width:50px;height:50px;border-radius:50%;background:#e39ab5;color:#351426;border:0;cursor:pointer;font-size:20px;z-index:20}
+.music-note[hidden]{display:none}
+@media(max-width:600px){.screen{padding:58px 17px 70px}.letter{padding:30px 22px}.letter p{font-size:19px}.bouquet{height:390px}.flower{font-size:50px}}
+</style>
+</head>
+<body>
+<div id="floaters"></div>
+
+<section class="screen active" id="quiz">
+<div class="wrap">
+<div class="eyebrow">a tiny question before your surprise</div>
+<h1>quiz <span class="gold">iseng</span> ♡</h1>
+<p class="sub">makanan kesukaan aku apa?</p>
+<div class="choices">
+<button class="choice" onclick="answer('Rendang')">Rendang</button>
+<button class="choice" onclick="answer('Sate')">Sate</button>
+<button class="choice" onclick="answer('Bakso')">Bakso</button>
+<button class="choice" onclick="answer('Sushi')">Sushi</button>
+</div>
+<div id="quizMsg"></div><div class="progress"><i id="prog"></i></div>
+</div>
+</section>
+
+<section class="screen" id="surprise">
+<div class="wrap">
+<div class="eyebrow">just for you</div>
+<h1>A Little Surprise<br><span class="gold">Just For You</span></h1>
+<p class="sub">aku bikin sesuatu kecil buat seseorang yang spesial.</p>
+<button class="btn" onclick="go('birthday')">Open Your Surprise →</button>
+</div>
+</section>
+
+<section class="screen" id="birthday">
+<div class="wrap">
+<div class="eyebrow">today is your day</div>
+<h1>happy birthday<br><span class="gold">irine</span> 🎂</h1>
+<p class="sub">semoga hari ini seindah senyum kamu.</p>
+<button class="btn" onclick="go('flowers')">continue ♡</button>
+</div>
+</section>
+
+<section class="screen" id="flowers">
+<div class="wrap">
+<div class="eyebrow">my first little gift</div>
+<h2>A Digital <span class="gold">Bouquet</span></h2>
+<p class="sub">each flower holds a little message just for you</p>
+<div class="bouquet">
+<div class="stem s1"></div><div class="stem s2"></div><div class="stem s3"></div><div class="stem s4"></div>
+<div class="flower f1" onclick="flower(1)">🌷</div>
+<div class="flower f2" onclick="flower(2)">🌸</div>
+<div class="flower f3" onclick="flower(3)">🌹</div>
+<div class="flower f4" onclick="flower(4)">🌼</div>
+<div class="flower f5" onclick="flower(5)">🌻</div>
+<div class="vase"></div>
+</div>
+<div class="message" id="flowerMsg">tap a flower ♡</div>
+<br><button class="btn" onclick="go('romantic')">next →</button>
+</div>
+</section>
+
+<section class="screen" id="romantic">
+<div class="wrap">
+<div class="eyebrow">from my heart</div>
+<h2>A Letter <span class="gold">For You</span></h2>
+<div class="letter">
+<div class="date">for irine ♡</div>
+<p>happy birthday !! to my favorite person, the one who always makes my heart feel safe and happy.</p>
+<p>thank you for staying, for understanding me, and for loving me with all your heart. im beyond grateful, to have you in my life.</p>
+<p>i love you, and i hope this year brings you more joy, more strength, and everything you’ve been praying for.</p>
+<p>i hope every little dream you have slowly finds its way to you. i hope you keep smiling, keep growing, and never forget how special you are to me.</p>
+<p>no matter how far apart we are, you will always have a special place in my heart. thank you for being you, irine.</p>
+<p class="sign">happy birthday, my love ♡</p>
+</div>
+<br><button class="btn" onclick="go('photos')">keep going →</button>
+</div>
+</section>
+
+<section class="screen" id="photos">
+<div class="wrap">
+<div class="photos">
+<div class="polaroid"><img src="img/foto1.jpg" alt="memory"></div>
+<div class="polaroid"><img src="img/foto2.jpg" alt="memory"></div>
+</div>
+<br><button class="btn" onclick="go('music')">next →</button>
+</div>
+</section>
+
+<section class="screen" id="music">
+<div class="wrap">
+<div class="eyebrow">songs for you</div>
+<h2>our little <span class="gold">playlist</span> 🎶</h2>
+<p class="sub">empat lagu yang aku pilih buat nemenin kamu.</p>
+<div class="music-grid">
+<div class="song"><div><small>01</small><strong>Until I Found You</strong><small>Stephen Sanchez</small></div><button class="play" aria-label="Play Until I Found You" onclick="playSong('until_i_found_you.mp3',this)">▶</button></div>
+<div class="song"><div><small>02</small><strong>About You</strong><small>The 1975</small></div><button class="play" aria-label="Play About You" onclick="playSong('about_you.mp3',this)">▶</button></div>
+<div class="song"><div><small>03</small><strong>Sempurna</strong><small>Andra and The Backbone</small></div><button class="play" aria-label="Play Sempurna" onclick="playSong('sempurna.mp3',this)">▶</button></div>
+<div class="song"><div><small>04</small><strong>Perfect</strong><small>Ed Sheeran</small></div><button class="play" aria-label="Play Perfect" onclick="playSong('perfect.mp3',this)">▶</button></div>
+</div>
+<div class="music-status" id="musicStatus" role="status">pilih lagu lalu tekan ▶ ♡</div>
+<audio id="audioPlayer" preload="none"></audio>
+<br><button class="btn" onclick="go('reasons')">next →</button>
+</div>
+</section>
+
+<section class="screen" id="reasons">
+<div class="wrap">
+<div class="eyebrow">things i never want you to forget</div>
+<h2>Reasons I'm <span class="gold">Grateful</span> To Know You</h2>
+<div class="reason-list">
+<div class="reason"><span>♡</span> you make ordinary days feel special.</div>
+<div class="reason"><span>♡</span> you make my heart feel safe.</div>
+<div class="reason"><span>♡</span> your smile can change my whole mood.</div>
+<div class="reason"><span>♡</span> thank you for staying and understanding me.</div>
+<div class="reason"><span>♡</span> because simply being you is already enough.</div>
+</div>
+<br><button class="btn" onclick="go('closing')">one last thing →</button>
+</div>
+</section>
+
+<section class="screen" id="closing">
+<div class="wrap">
+<div class="flower-ending">🌸 ✿ 🌷 ✿ 🌹</div>
+<h2>may your life always be <span class="gold">filled with flowers</span></h2>
+<p class="sub">may every chapter bring you peace, love, beautiful memories, and all the happiness you deserve.</p>
+<br><button class="btn" onclick="go('final')">open the last message ♡</button>
+</div>
+</section>
+
+<section class="screen" id="final">
+<div class="wrap">
+<div class="heart">♡</div>
+<div class="eyebrow">for the most special person</div>
+<h1>happy birthday,<br><span class="gold">the most special irine</span> 💕</h1>
+<p class="sub">i love you. always.</p>
+<div class="flower-ending">🌸 🌷 🌹 🌼 🌻</div>
+</div>
+</section>
+
+<button class="music-note" id="musicNote" hidden aria-label="Play or pause music" onclick="toggleMusic()">♪</button>
+
+<script>
+const screens=[...document.querySelectorAll('.screen')];
+function go(id){
+  screens.forEach(s=>s.classList.remove('active'));
+  const target=document.getElementById(id); target.classList.add('active');
+  window.scrollTo({top:0,behavior:'instant'});
+  spawnFlowers(10);
+}
+function answer(a){
+  const m=document.getElementById('quizMsg'), p=document.getElementById('prog');
+  if(a==='Rendang'){
+    m.textContent='🎉 benar! kamu inget juga ♡';
+    p.style.width='100%';
+    setTimeout(()=>go('surprise'),900);
+  }else{
+    m.textContent='hehe salah 😭 coba lagi, aku kasih kesempatan ♡';
+    p.style.width='45%';
+  }
+}
+const msgs=[
+'you deserve all the flowers in the world ♡',
+'you make my heart feel safe.',
+'i hope you always keep that beautiful smile.',
+'thank you for being part of my life.',
+'for the girl who means more than she knows ♡'
+];
+function flower(n){document.getElementById('flowerMsg').textContent=msgs[n-1]}
+const audioPlayer=document.getElementById('audioPlayer');
+const musicStatus=document.getElementById('musicStatus');
+let activePlayButton=null;
+function playSong(file,button){
+  const path='music/'+file;
+  if(audioPlayer.getAttribute('src')===path && !audioPlayer.paused){
+    audioPlayer.pause(); button.textContent='▶'; button.classList.remove('playing'); musicStatus.textContent='lagu dijeda ♡'; return;
+  }
+  if(activePlayButton){activePlayButton.textContent='▶';activePlayButton.classList.remove('playing')}
+  activePlayButton=button;
+  audioPlayer.src=path;
+  audioPlayer.load();
+  const playPromise=audioPlayer.play();
+  if(playPromise && playPromise.then){playPromise.then(()=>{button.textContent='Ⅱ';button.classList.add('playing');musicStatus.textContent='sedang diputar ♡';}).catch(()=>{button.textContent='▶';button.classList.remove('playing');musicStatus.textContent='file MP3 belum ada atau tidak bisa dibaca. Periksa folder music ♡';});}
+}
+function toggleMusic(){if(audioPlayer.paused){if(audioPlayer.src){audioPlayer.play().catch(()=>{musicStatus.textContent='pilih lagu dari daftar terlebih dahulu ♡'});}else{musicStatus.textContent='pilih lagu dari daftar terlebih dahulu ♡';}}else{audioPlayer.pause();}}
+audioPlayer.addEventListener('ended',()=>{if(activePlayButton){activePlayButton.textContent='▶';activePlayButton.classList.remove('playing')}musicStatus.textContent='lagu selesai ♡'});
+audioPlayer.addEventListener('pause',()=>{if(activePlayButton){activePlayButton.textContent='▶';activePlayButton.classList.remove('playing')}});
+function spawnFlowers(n=8){
+  for(let i=0;i<n;i++){
+    const f=document.createElement('div'); f.className='float';
+    f.textContent=['🌸','🌷','✿','🌼','💕','✨'][Math.floor(Math.random()*6)];
+    f.style.left=Math.random()*100+'vw';
+    f.style.animationDelay=(Math.random()*3)+'s';
+    f.style.animationDuration=(7+Math.random()*6)+'s';
+    document.getElementById('floaters').appendChild(f);
+    setTimeout(()=>f.remove(),14000);
+  }
+}
+spawnFlowers(14);
+</script>
+</body>
+</html>
