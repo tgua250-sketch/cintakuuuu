@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>birthday surprise for irine ♡</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Montserrat:wght@300;400;500&display=swap');
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  color:#fff7fb;
+  background:
+    radial-gradient(circle at 20% 15%, rgba(255,190,220,.12), transparent 28%),
+    radial-gradient(circle at 80% 40%, rgba(255,120,180,.10), transparent 30%),
+    linear-gradient(180deg,#160d17 0%,#351526 45%,#24101c 100%);
+  font-family:Montserrat,sans-serif;
+  overflow-x:hidden;
+}
+body:before{
+  content:"";
+  position:fixed; inset:-20%;
+  background:
+    radial-gradient(circle,rgba(255,214,235,.16) 0 2px,transparent 3px) 0 0/90px 90px,
+    radial-gradient(circle,rgba(255,255,255,.10) 0 1px,transparent 2px) 35px 50px/120px 120px;
+  filter:blur(.2px);
+  pointer-events:none;
+  animation:floatBg 18s linear infinite;
+}
+@keyframes floatBg{to{transform:translate3d(40px,60px,0)}}
+
+.screen{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:42px 20px;
+  position:relative;
+}
+.hidden{display:none!important}
+.card{
+  width:min(650px,94vw);
+  text-align:center;
+  padding:44px 24px;
+  border:1px solid rgba(255,220,238,.28);
+  background:rgba(25,10,19,.48);
+  backdrop-filter:blur(12px);
+  box-shadow:0 25px 80px rgba(0,0,0,.35);
+  border-radius:26px;
+}
+.kicker{
+  letter-spacing:5px;
+  text-transform:uppercase;
+  font-size:11px;
+  opacity:.7;
+  margin-bottom:20px;
+}
+h1,h2{
+  font-family:"Cormorant Garamond",serif;
+  font-weight:500;
+  margin:0;
+}
+h1{font-size:clamp(48px,12vw,82px);line-height:.95}
+h2{font-size:clamp(38px,9vw,62px)}
+.gold{color:#f5c77a}
+.script{font-style:italic;color:#f4b4cf}
+p{line-height:1.9;font-size:15px;color:#f5e7ee}
+
+button{
+  font:500 13px Montserrat,sans-serif;
+  letter-spacing:1px;
+  border:1px solid rgba(255,235,245,.65);
+  background:rgba(255,255,255,.07);
+  color:#fff;
+  border-radius:999px;
+  padding:13px 24px;
+  cursor:pointer;
+  transition:.25s;
+}
+button:hover{background:#e18aad;transform:translateY(-2px)}
+.primary{background:#c9658d;border-color:#e7a8c2}
+.quiz-buttons{display:grid;gap:10px;max-width:320px;margin:25px auto 0}
+.quiz-buttons button{width:100%}
+#quizResult{min-height:28px;color:#f6b6d0}
+
+.gate-art{
+  width:180px;height:130px;margin:0 auto 28px;
+  border:1px solid rgba(255,220,235,.4);
+  display:flex;align-items:center;justify-content:center;
+  position:relative;background:linear-gradient(135deg,#f6dce7,#f4b9d0);
+  color:#5c253e;
+  box-shadow:0 20px 55px rgba(0,0,0,.35);
+}
+.gate-art:before{content:"♡";font-size:60px;color:#a34870}
+.gate-buttons{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}
+#noMsg{font-size:13px;color:#f1aac7;min-height:20px;margin-top:14px}
+
+#main{
+  display:none;
+  position:relative;
+}
+.long-page{
+  width:min(760px,94vw);
+  margin:auto;
+  padding:75px 0 100px;
+}
+.section-block{text-align:center;margin-bottom:90px}
+.continue-wrap{padding:70px 20px;text-align:center}
+.continue{
+  margin-top:26px;
+  background:#c9658d;
+}
+.divider{
+  width:80px;height:1px;background:rgba(255,210,230,.5);
+  margin:25px auto;
+}
+.flower-field{
+  min-height:390px;
+  position:relative;
+  margin:20px auto 25px;
+  overflow:hidden;
+}
+.flower{
+  position:absolute;
+  font-size:34px;
+  animation:flowerFloat 4.2s ease-in-out infinite, flowerDrift 7s ease-in-out infinite;
+  filter:drop-shadow(0 4px 10px rgba(255,120,180,.3));
+}
+.f1{left:8%;top:15%}.f2{left:28%;top:4%;font-size:43px;animation-delay:.7s}
+.f3{left:52%;top:15%;font-size:39px;animation-delay:1.2s}.f4{right:8%;top:8%;animation-delay:1.8s}
+.f5{left:16%;top:50%;font-size:30px;animation-delay:2.1s}.f6{right:18%;top:45%;font-size:42px;animation-delay:.3s}
+.f7{left:42%;top:53%;font-size:58px;animation-delay:1.5s}
+.bouquet{font-size:105px;position:absolute;left:50%;bottom:8%;transform:translateX(-50%);filter:drop-shadow(0 10px 18px rgba(0,0,0,.25))}
+@keyframes flowerFloat{50%{transform:translateY(-14px) rotate(4deg)}}
+@keyframes flowerDrift{0%,100%{opacity:.78}50%{opacity:1;filter:drop-shadow(0 0 14px rgba(255,150,205,.55))}}
+
+.letter{
+  text-align:left;
+  background:rgba(255,241,247,.96);
+  color:#3b2030;
+  border-radius:8px;
+  padding:42px 28px;
+  box-shadow:0 20px 70px rgba(0,0,0,.25);
+}
+.letter p{color:#4a3040;font-family:"Cormorant Garamond",serif;font-size:20px;line-height:1.7}
+.letter .sign{font-style:italic;font-size:22px}
+
+.photos{
+  display:grid;
+  gap:28px;
+  margin-top:35px;
+}
+.photo{
+  width:100%;
+  border-radius:20px;
+  display:block;
+  box-shadow:0 18px 55px rgba(0,0,0,.35);
+  border:1px solid rgba(255,220,235,.25);
+}
+
+.songs{display:grid;gap:15px;margin-top:30px}
+.song{
+  padding:18px;
+  border:1px solid rgba(255,220,235,.22);
+  border-radius:18px;
+  background:rgba(255,255,255,.05);
+  text-align:left;
+}
+.song-name{font-family:"Cormorant Garamond",serif;font-size:25px;margin-bottom:9px}
+audio{width:100%;height:42px}
+
+.reason-box{
+  display:grid;gap:15px;text-align:left;margin-top:30px
+}
+.reason{
+  padding:18px 20px;border-left:2px solid #d889a9;
+  background:rgba(255,255,255,.045);border-radius:0 15px 15px 0;
+}
+.reason strong{color:#f2b1ca;font-family:"Cormorant Garamond",serif;font-size:24px}
+.closing{
+  text-align:center;
+  padding:70px 15px 10px;
+}
+.final{
+  min-height:100svh;
+  display:flex;align-items:center;justify-content:center;
+  text-align:center;padding:30px;
+}
+.final h1{font-size:clamp(50px,13vw,90px)}
+.small{font-size:12px;opacity:.55;margin-top:12px}
+.page-slide{min-height:100svh;position:relative;background:radial-gradient(circle at 50% 10%,rgba(255,190,220,.10),transparent 35%),linear-gradient(180deg,#160d17 0%,#351526 45%,#24101c 100%);animation:pageIn .65s ease both}
+.page-slide.hidden{display:none!important}
+@keyframes pageIn{from{opacity:0;transform:translateX(20px)}to{opacity:1;transform:none}}
+.second-long{padding-top:80px}
+.page-transition{min-height:100svh;display:flex;align-items:center;justify-content:center;text-align:center;padding:30px}
+.page-transition-card{width:min(650px,94vw);padding:50px 25px;border:1px solid rgba(255,220,238,.24);border-radius:30px;background:rgba(25,10,19,.48);backdrop-filter:blur(12px);box-shadow:0 25px 80px rgba(0,0,0,.35)}
+
+
+@media(max-width:500px){
+  .card{padding:35px 18px}
+  .long-page{padding-top:55px}
+  .letter{padding:30px 20px}
+}
+
+/* === NEW: requested visual flow === */
+.next-wrap{margin-top:30px;text-align:center}
+.next-btn{min-width:170px;box-shadow:0 10px 35px rgba(201,101,141,.22)}
+.jar-wrap{position:relative;width:min(300px,80vw);height:360px;margin:34px auto 18px;display:flex;align-items:center;justify-content:center}
+.jar{position:relative;width:155px;height:245px;border:2px solid rgba(255,220,238,.48);border-radius:20px 20px 34px 34px;background:linear-gradient(90deg,rgba(255,255,255,.12),rgba(255,160,205,.08),rgba(255,255,255,.15));box-shadow:inset 12px 0 25px rgba(255,255,255,.07),0 20px 50px rgba(0,0,0,.25);overflow:visible}
+.jar:before{content:"";position:absolute;left:18px;top:-25px;width:115px;height:38px;border:2px solid rgba(255,220,238,.5);border-radius:12px 12px 8px 8px;background:rgba(255,160,205,.16);box-shadow:0 5px 18px rgba(255,120,180,.12)}
+.jar:after{content:"";position:absolute;left:24px;top:18px;width:8px;height:185px;border-radius:10px;background:rgba(255,255,255,.14)}
+.jar-label{position:absolute;left:50%;top:103px;transform:translateX(-50%);width:115px;text-align:center;font-family:"Cormorant Garamond",serif;font-size:16px;letter-spacing:.4px;color:rgba(255,235,245,.95);z-index:3;pointer-events:none}
+.jar.shake{animation:jarShake .72s cubic-bezier(.36,.07,.19,.97) both}
+@keyframes jarShake{10%,90%{transform:translateX(-5px) rotate(-2deg)}20%,80%{transform:translateX(8px) rotate(3deg)}30%,50%,70%{transform:translateX(-10px) rotate(-4deg)}40%,60%{transform:translateX(10px) rotate(4deg)}}
+.note{position:absolute;width:42px;height:25px;border-radius:6px;background:rgba(255,200,225,.5);box-shadow:0 3px 8px rgba(0,0,0,.15);transform:rotate(var(--r));animation:noteFloat 3s ease-in-out infinite}
+.note:nth-child(1){left:22px;top:78px;--r:-9deg}.note:nth-child(2){right:20px;top:125px;--r:7deg;animation-delay:.3s}.note:nth-child(3){left:55px;top:175px;--r:10deg;animation-delay:.6s}
+@keyframes noteFloat{50%{transform:translateY(-6px) rotate(var(--r))}}
+.jar-petals{position:absolute;inset:-30px;pointer-events:none}
+.jar-petals span{position:absolute;font-size:18px;animation:jarPetal 2.8s ease-in-out infinite}
+.jar-petals span:nth-child(1){left:5%;top:28%}.jar-petals span:nth-child(2){right:4%;top:42%;animation-delay:.5s}.jar-petals span:nth-child(3){left:0;top:62%;animation-delay:1s}.jar-petals span:nth-child(4){right:0;top:20%;animation-delay:1.4s}
+@keyframes jarPetal{50%{transform:translateY(-12px) rotate(20deg);opacity:.65}}
+.jar-hint{font-size:12px;opacity:.7;margin-top:12px}
+.jar-note{width:min(390px,86vw);margin:18px auto 0;padding:18px 20px 20px;background:rgba(255,255,255,.94);color:#5b3a49;border-radius:8px;box-shadow:0 12px 28px rgba(0,0,0,.18);position:relative;transform:rotate(-1deg);opacity:0;visibility:hidden;min-height:72px;display:flex;align-items:center;justify-content:center;transition:opacity .35s ease,transform .35s ease,visibility .35s}
+.jar-note:before{content:"";position:absolute;top:0;left:14px;right:14px;height:1px;background:rgba(150,110,130,.18)}
+.jar-note.show{opacity:1;visibility:visible;transform:rotate(-1deg) translateY(0)}
+.jar-note-text{font-family:"Cormorant Garamond",serif;font-size:clamp(17px,4.4vw,21px);line-height:1.35;text-align:center;letter-spacing:.1px}
+.jar-note-text::before{content:"♡";display:block;font-family:inherit;font-size:13px;color:#d58aa9;margin-bottom:4px}
+.final-birthday{padding:90px 15px 25px;text-align:center;min-height:70vh;display:flex;align-items:center;justify-content:center}
+.final-birthday .final-card{width:min(650px,94vw);padding:55px 25px;border-radius:30px;border:1px solid rgba(255,220,238,.22);background:radial-gradient(circle at 50% 25%,rgba(255,140,190,.16),transparent 45%),rgba(255,255,255,.035);box-shadow:0 25px 90px rgba(0,0,0,.28)}
+.final-birthday .cake{font-size:68px;filter:drop-shadow(0 8px 18px rgba(255,180,210,.25));animation:cakeFloat 2.8s ease-in-out infinite}
+@keyframes cakeFloat{50%{transform:translateY(-8px)}}
+.love-line{font-family:"Cormorant Garamond",serif;font-size:clamp(48px,12vw,82px);color:#f4b4cf;font-style:italic;margin:22px 0 0;animation:loveGlow 2.5s ease-in-out infinite}
+@keyframes loveGlow{50%{text-shadow:0 0 25px rgba(244,180,207,.45)}}
+
+/* === ADDED: bouquet WOW + secret ending + easter egg === */
+.bouquet{cursor:pointer;transition:transform .55s cubic-bezier(.2,.8,.2,1),filter .55s;z-index:3}
+.bouquet:hover{transform:translateX(-50%) scale(1.08) rotate(-2deg)}
+.bouquet-wow{position:fixed;inset:0;z-index:9999;display:flex;align-items:center;justify-content:center;background:rgba(17,5,13,.0);pointer-events:none;opacity:0;transition:opacity .45s}
+.bouquet-wow.active{opacity:1;background:rgba(17,5,13,.82);pointer-events:auto}
+.bouquet-wow-card{width:min(520px,90vw);padding:38px 25px;text-align:center;border:1px solid rgba(255,220,238,.35);border-radius:28px;background:rgba(45,14,30,.92);box-shadow:0 30px 100px rgba(0,0,0,.55);transform:translateY(24px) scale(.94);transition:.55s}
+.bouquet-wow.active .bouquet-wow-card{transform:none}
+.wow-bouquet{font-size:110px;line-height:1;filter:drop-shadow(0 12px 25px rgba(255,130,190,.35));animation:wowPulse 2s ease-in-out infinite}
+@keyframes wowPulse{50%{transform:scale(1.07) rotate(2deg)}}
+.petal{position:fixed;z-index:10000;pointer-events:none;font-size:24px;animation:petalFly 1.8s ease-out forwards}
+@keyframes petalFly{0%{transform:translate(0,0) scale(.5) rotate(0);opacity:1}100%{transform:translate(var(--x),var(--y)) scale(1.25) rotate(360deg);opacity:0}}
+.secret-trigger{margin-top:22px;color:#f4b4cf;font-size:12px;opacity:.75;letter-spacing:1px;cursor:pointer;text-decoration:underline;text-underline-offset:4px}
+.secret-trigger:hover{opacity:1}
+.secret-overlay{position:fixed;inset:0;z-index:10001;display:flex;align-items:center;justify-content:center;padding:24px;background:rgba(10,3,8,.94);opacity:0;visibility:hidden;transition:.5s}
+.secret-overlay.open{opacity:1;visibility:visible}
+.secret-card{text-align:center;width:min(620px,92vw);padding:48px 24px;border:1px solid rgba(255,220,238,.25);border-radius:30px;background:radial-gradient(circle at 50% 0%,rgba(255,130,190,.16),transparent 48%),rgba(31,9,21,.96);box-shadow:0 30px 100px rgba(0,0,0,.6);transform:scale(.92) translateY(18px);transition:.6s}
+.secret-overlay.open .secret-card{transform:none}
+.secret-heart{font-size:62px;animation:secretBeat 1.2s ease-in-out infinite}
+@keyframes secretBeat{50%{transform:scale(1.12)}}
+.secret-card h2{font-size:clamp(42px,10vw,68px);margin:12px 0}
+.secret-card p{max-width:470px;margin:15px auto}
+.easter-glow{position:fixed;inset:0;z-index:10002;pointer-events:none;background:radial-gradient(circle at center,rgba(255,145,195,.35),transparent 55%);opacity:0;animation:easterGlow .9s ease-out forwards}
+@keyframes easterGlow{0%{opacity:0}30%{opacity:1}100%{opacity:0}}
+.easter-toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);z-index:10003;background:rgba(28,8,19,.95);border:1px solid rgba(255,210,230,.35);padding:12px 18px;border-radius:999px;font-size:12px;opacity:0;animation:easterToast 2.8s ease forwards;white-space:nowrap}
+@keyframes easterToast{12%,82%{opacity:1;transform:translateX(-50%) translateY(0)}100%{opacity:0;transform:translateX(-50%) translateY(8px)}}
+#birthday .gold{cursor:pointer;user-select:none}
+</style>
+</head>
+<body>
+
+<!-- 1. QUIZ -->
+<section id="quiz" class="screen">
+  <div class="card">
+    <div class="kicker">a tiny question before the surprise</div>
+    <h1>quiz <span class="gold">iseng</span> ♡</h1>
+    <p>makanan kesukaan aku apa?</p>
+    <div class="quiz-buttons">
+      <button onclick="answer('Rendang')">Rendang</button>
+      <button onclick="answer('Sate')">Sate</button>
+      <button onclick="answer('Bakso')">Bakso</button>
+      <button onclick="answer('Sushi')">Sushi</button>
+    </div>
+    <div id="quizResult"></div>
+  </div>
+</section>
+
+<!-- 2. A LITTLE SURPRISE -->
+<section id="surprise" class="screen hidden">
+  <div class="card">
+    <div class="kicker">something made with love</div>
+    <h1>A Little Surprise</h1>
+    <h1 class="gold">Just For You</h1>
+    <div style="margin-top:35px">
+      <button class="primary" onclick="openGate()">Open Your Surprise →</button>
+    </div>
+  </div>
+</section>
+
+<!-- 3. GATE -->
+<section id="gate" class="screen hidden">
+  <div class="card">
+    <div class="gate-art"></div>
+    <h2>Do you want to open it?</h2>
+    <p>there's something waiting for you inside ♡</p>
+    <div class="gate-buttons">
+      <button class="primary" onclick="showBirthday()">Open it</button>
+      <button onclick="noTry()">No ty</button>
+    </div>
+    <div id="noMsg"></div>
+  </div>
+</section>
+
+<!-- 4. FIRST PAGE: ORIGINAL CONTENT THROUGH MUSIC -->
+<main id="main">
+  <div class="long-page">
+
+    <section class="section-block" id="birthday">
+      <div class="kicker">for the girl who means so much to me</div>
+      <h1>happy birthday<br><span class="gold">irine</span> 🎂</h1>
+      <p style="max-width:560px;margin:25px auto">
+        today is your day, and i just want you to know how special you are to me.
+      </p>
+      <div class="continue-wrap">
+        <button class="continue" onclick="document.getElementById('bouquet').scrollIntoView({behavior:'smooth'})">Continue ♡</button>
+      </div>
+    </section>
+
+    <section class="section-block" id="bouquet">
+      <div class="kicker">— my first gift —</div>
+      <h2>A Digital Bouquet</h2>
+      <p>flowers for you, because you deserve beautiful things.</p>
+      <div class="flower-field">
+        <span class="flower f1">🌸</span>
+        <span class="flower f2">🌼</span>
+        <span class="flower f3">🌷</span>
+        <span class="flower f4">🌺</span>
+        <span class="flower f5">🌻</span>
+        <span class="flower f6">🌹</span>
+        <span class="flower f7">💐</span>
+        <div class="bouquet">💐</div>
+      </div>
+      <div class="divider"></div>
+      <p class="script" style="font-size:23px">if flowers could speak, i think they would tell you how beautiful you are.</p>
+      <p class="small">tap the bouquet ♡</p>
+    </section>
+
+    <section class="section-block">
+      <div class="kicker">from my heart</div>
+      <div class="letter">
+        <p>my dearest irine,</p>
+        <p>
+          happy birthday !! to my favorite person, the one who always makes my heart feel safe and happy.
+          thank you for staying, for understanding me, and for loving me with all your heart.
+          i'm beyond grateful to have you in my life.
+        </p>
+        <p>
+          sometimes i don't know how to put everything i feel into words, but i hope you can feel it
+          through the little things i do. you mean more to me than you probably realize.
+          your smile, your laugh, the way you talk, even the smallest moments with you can make
+          an ordinary day feel special.
+        </p>
+        <p>
+          i hope this new chapter of your life brings you more happiness, more strength,
+          more beautiful memories, and everything you've been praying for.
+          i hope you always remember that you deserve to be loved, appreciated, and treated gently.
+        </p>
+        <p>
+          no matter how simple this little surprise is, i made it with all my heart.
+          because you are someone worth celebrating, not only today, but every day.
+          thank you for being you. thank you for being part of my life.
+        </p>
+        <p>
+          i love you, and i hope this year gives you countless reasons to smile.
+          happy birthday, my love. <span class="gold">&lt;33</span>
+        </p>
+        <p class="sign">— from me, with all my heart ♡</p>
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="photos">
+        <img class="photo" src="img/foto1.jpg" alt="Irine photo 1">
+        <img class="photo" src="img/foto2.jpg" alt="Irine photo 2">
+      </div>
+    </section>
+
+    <section class="section-block">
+      <div class="kicker">a little soundtrack for you</div>
+      <h2>songs for you ♫</h2>
+      <p>tap play and let these songs keep you company while you read.</p>
+      <div class="songs">
+        <div class="song">
+          <div class="song-name">About You</div>
+          <audio controls preload="none"><source src="music/about_you.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="song">
+          <div class="song-name">Sempurna — Andra</div>
+          <audio controls preload="none"><source src="music/sempurna_andra.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="song">
+          <div class="song-name">Perfect</div>
+          <audio controls preload="none"><source src="music/perfect.mp3" type="audio/mpeg"></audio>
+        </div>
+        <div class="song">
+          <div class="song-name">OK, Are You Ready?</div>
+          <audio controls preload="none"><source src="music/ok_are_you_ready.mp3" type="audio/mpeg"></audio>
+        </div>
+      </div>
+      <p class="small">The MP3 files need to be placed in the music folder with the names shown above.</p>
+      <div class="next-wrap"><button class="next-btn" onclick="openSecondPage()">Next →</button></div>
+    </section>
+
+  </div>
+</main>
+
+<!-- 5. NEW PAGE AFTER MUSIC: THEN ONE CONTINUOUS SCROLL -->
+<section id="secondPage" class="page-slide hidden">
+  <div class="long-page second-long">
+    <section class="section-block" id="reasons">
+      <div class="kicker">little things i appreciate about you</div>
+      <h2>reasons i'm grateful<br>to know you 💌</h2>
+      <p>shake the jar and pick a little note ♡</p>
+      <div class="jar-wrap">
+        <div class="jar" id="reasonJar" onclick="shakeJar()">
+          <div class="jar-label">you are special ♡</div>
+        </div>
+        <div class="jar-petals"><span>🌸</span><span>🌼</span><span>🌷</span><span>💗</span></div>
+      </div>
+      <button class="primary" onclick="shakeJar()">🫙 Shake the jar</button>
+      <div id="jarHint" class="jar-hint">tap it and see what comes out ♡</div>
+      <div id="jarNote" class="jar-note" aria-live="polite"><div id="jarNoteText" class="jar-note-text"></div></div>
+    </section>
+
+    <section class="closing" id="flowerWish">
+      <h2 class="script">may your life always be filled with flowers 🌸</h2>
+      <p>and may every new day bring you something beautiful.</p>
+    </section>
+
+    <section class="final-birthday" id="finalBirthday">
+      <div class="final-card">
+        <div class="cake">🎂</div>
+        <div class="kicker">with all my heart ♡</div>
+        <h2>Happy Birthday!</h2>
+        <p>for the most special girl, may today remind you just how loved you are.</p>
+        
+      </div>
+    </section>
+
+    <div class="secret-trigger" onclick="openSecret()">psst... one more little thing</div>
+  </div>
+</section>
+
+
+
+<!-- ADDED FEATURES: bouquet wow -->
+<div id="bouquetWow" class="bouquet-wow" aria-hidden="true">
+  <div class="bouquet-wow-card">
+    <div class="wow-bouquet">💐</div>
+    <div class="kicker">just for you</div>
+    <h2 class="script">a little more than a bouquet</h2>
+    <p>because one bouquet didn't feel like enough for someone as special as you.</p>
+    <button class="primary" onclick="closeBouquetWow()">keep going ♡</button>
+  </div>
+</div>
+
+<!-- ADDED FEATURE: secret ending -->
+<div id="secretOverlay" class="secret-overlay" aria-hidden="true">
+  <div class="secret-card">
+    <div class="secret-heart">♡</div>
+    <div class="kicker">you found the last page</div>
+    <h2 class="script">one last thing...</h2>
+    <p>Out of everything on this little page, this part is the simplest:</p>
+    <p class="script" style="font-size:26px">I love you ♡</p>
+    <button class="primary" onclick="closeSecret()">close with a smile</button>
+  </div>
+</div>
+
+<script>
+function answer(ans){
+  const result=document.getElementById('quizResult');
+  if(ans==='Rendang'){
+    result.textContent='🎉 benar! kamu inget yaa ♡';
+  }else{
+    result.textContent='hehe, masih boleh coba lagi 😌';
+    return;
+  }
+  setTimeout(()=>{
+    document.getElementById('quiz').classList.add('hidden');
+    document.getElementById('surprise').classList.remove('hidden');
+    window.scrollTo(0,0);
+  },800);
+}
+function openGate(){
+  document.getElementById('surprise').classList.add('hidden');
+  document.getElementById('gate').classList.remove('hidden');
+  window.scrollTo(0,0);
+}
+function noTry(){
+  document.getElementById('noMsg').textContent='hehe, no ty tidak berlaku 😭 kamu harus pencet “Open it” ♡';
+}
+function showBirthday(){
+  document.getElementById('gate').classList.add('hidden');
+  document.getElementById('main').style.display='block';
+  window.scrollTo(0,0);
+}
+
+function openSecondPage(){
+  document.getElementById('main').style.display='none';
+  const page=document.getElementById('secondPage');
+  page.classList.remove('hidden');
+  window.scrollTo({top:0,behavior:'instant'});
+}
+
+const bouquetEl=document.querySelector('.bouquet');
+let bouquetOpened=false;
+if(bouquetEl){
+  bouquetEl.addEventListener('click',()=>{
+    if(bouquetOpened)return;
+    bouquetOpened=true;
+    const wow=document.getElementById('bouquetWow');
+    wow.classList.add('active');
+    wow.setAttribute('aria-hidden','false');
+    for(let i=0;i<34;i++){
+      const petal=document.createElement('span');
+      petal.className='petal';
+      petal.textContent=['🌸','🌷','💗','✨'][i%4];
+      petal.style.left='50%'; petal.style.top='48%';
+      petal.style.setProperty('--x',`${(Math.random()-.5)*95}vw`);
+      petal.style.setProperty('--y',`${(Math.random()-.5)*90}vh`);
+      petal.style.animationDelay=`${Math.random()*.22}s`;
+      document.body.appendChild(petal);
+      setTimeout(()=>petal.remove(),2200);
+    }
+  });
+}
+function closeBouquetWow(){
+  const wow=document.getElementById('bouquetWow');
+  wow.classList.remove('active'); wow.setAttribute('aria-hidden','true');
+}
+function shakeJar(){
+  const jar=document.getElementById('reasonJar');
+  const hint=document.getElementById('jarHint');
+  const note=document.getElementById('jarNote');
+  const noteText=document.getElementById('jarNoteText');
+  if(!jar)return;
+  jar.classList.remove('shake');
+  void jar.offsetWidth;
+  jar.classList.add('shake');
+  const messages=[
+    'because you are someone worth celebrating every day.',
+    'because knowing you made my life more beautiful 🌸',
+    'because your smile makes ordinary days feel softer ♡',
+    'because being with you feels like home.',
+    'because you have a place in my heart that nobody else could replace.',
+    'because your smile can make my whole mood better.',
+    'because simply knowing you has made my life more beautiful.'
+  ];
+  const message=messages[Math.floor(Math.random()*messages.length)];
+  if(noteText) noteText.textContent=message;
+  if(note){
+    note.classList.remove('show');
+    void note.offsetWidth;
+    note.classList.add('show');
+  }
+  if(hint) hint.textContent='a little note just for you ♡';
+  setTimeout(()=>jar.classList.remove('shake'),800);
+}
+function openSecret(){
+  const el=document.getElementById('secretOverlay');
+  el.classList.add('open'); el.setAttribute('aria-hidden','false');
+}
+function closeSecret(){
+  const el=document.getElementById('secretOverlay');
+  el.classList.remove('open'); el.setAttribute('aria-hidden','true');
+}
+let irineClicks=0, irineTimer;
+const irineName=document.querySelector('#birthday .gold');
+if(irineName){
+  irineName.addEventListener('click',()=>{
+    irineClicks++;
+    clearTimeout(irineTimer);
+    irineTimer=setTimeout(()=>irineClicks=0,900);
+    if(irineClicks===3){
+      irineClicks=0;
+      const glow=document.createElement('div'); glow.className='easter-glow'; document.body.appendChild(glow);
+      const toast=document.createElement('div'); toast.className='easter-toast'; toast.textContent='🥚 you found my tiny secret, Irine ♡'; document.body.appendChild(toast);
+      setTimeout(()=>{glow.remove();toast.remove()},3000);
+    }
+  });
+}
+</script>
+</body>
+</html>
